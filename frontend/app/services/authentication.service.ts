@@ -21,6 +21,7 @@ export class AuthenticationService extends Service implements CanActivate {
 	}
 
 	canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
+		//first program von basem
 		if (state.url.includes(this.constants.userURL)) {
 			return this.handleSuperUserRoute();
 		}
